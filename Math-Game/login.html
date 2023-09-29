@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- end -->
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#page-top">
+          <span class="d-lg-none text-uppercase">Math Game</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#myTopnav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="myTopnav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Games
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="games/math-facts.html"
+                  >Math Game</a
+                >
+                <a class="dropdown-item" href="games/anagram-hunt.html"
+                  >Anagram Hunt</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="contact-us.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <section class="text-center w-50 ml-auto mr-auto center">
+        <div id="loginForm">
+          <h2 class="mb-5">Login</h2>
+          <form action="javascript:alert('Form Submitted')">
+            <div class="form-group row">
+              <label for="email" class="col-form-label col-sm-3"
+                >Email address:</label
+              >
+              <div class="col-sm-8">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="password" class="col-form-label col-sm-3"
+                >Password:</label
+              >
+              <div class="col-sm-8">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+            <button id="loginBtn" class="btn btn-primary float-right mr-5">
+              Login
+            </button>
+          </form>
+          <p id="reginsterLink" class="text-center">
+            <a href="#">Need an account? Register.</a>
+          </p>
+        </div>
+        <div id="registerForm">
+          <h2 class="mb-5">Register</h2>
+          <form action="javascript:alert('Form Submitted')">
+            <div class="form-group row">
+              <label for="registerEmail" class="col-form-label col-sm-3"
+                >Email address:</label
+              >
+              <div class="col-sm-8">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="registerEmail"
+                  placeholder="Enter email"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="registerPassword" class="col-form-label col-sm-3"
+                >Password:</label
+              >
+              <div class="col-sm-8">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerPassword"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="repeatPassword" class="col-form-label col-sm-3"
+                >Repeat Password:</label
+              >
+              <div class="col-sm-8">
+                <input
+                  type="password"
+                  id="repeatPassword"
+                  class="form-control"
+                  placeholder="Repeat Password"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-8">
+                <div class="form-check text-left">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="ageCheck"
+                  />
+                  <label class="form-check-label" for="ageCheck">
+                    I am over 13 and like playing games.
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary float-right ml-1">Register</button>
+          </form>
+          <p id="loginLink" class="text-center">
+            <a href="#">Have an account? Login.</a>
+          </p>
+        </div>
+      </section>
+      <hr class="mt-5" />
+      <footer class="d-flex justify-content-between">
+        <div>&copy;2021 Math Game</div>
+        <div class="icons">
+          <a href="contact-us.html">
+            <i class="fas fa-envelope fa-2x m-2"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="fab fa-facebook-f fa-2x m-2"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter fa-2x m-2"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <i class="fab fa-instagram fa-2x m-2"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ab900783c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+body{
+  background-image: url("../img/Background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color:ghostwhite !important;
+  height: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+hr{
+  background-color:ghostwhite;
+}
+/* style the navigation link */
+.navbar ul li a.nav-link{
+  color:antiquewhite !important;
+}
+.dropdown-menu a{
+  color: black !important;
+}
+
+section#content div.btn{
+  background-color: rgb(196, 148, 227);
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: -5px 5px 4px rgb(116, 118, 163);
+}
+section#content a{
+  text-decoration: none;
+  color:black;
+}
+section.center{
+  min-height: 65vh;
+}
+/* footer */
+div.icons i{
+  color: gainsboro;
+}
+
+/* register form */
+div#registerForm{
+  display: none;
+}
+
+/* math fact */
+div#question{
+  font-size: 2rem;
+  letter-spacing: 0.8rem;
+}
+input#answer{
+  height: 40px;
+  font-size: 1.3rem;
+  margin: 25px auto;
+  top: 30px;
+  border:2px solid black;
+}
+table{
+  margin: 0 auto 30px auto;
+}
+table td{
+  width: 10%;
+  padding: 5px;
+}
+table td button{
+  font-family: 'Orbitron', sans-serif;
+  background-color: #64278f;
+  color: white;
+  border: solid black 0.5px;
+  width: 100%;
+  border-radius: 5px;
+  height: 70%;
+  outline: none;
+}
+table dd button:active {
+ background: #e5e5e5;
+ -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+ -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+ box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+/* modal */
+div.modal-body{
+  height: 250px;
+}
+div#resultModal{
+  color: black;
+}
+div#finalScore{
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
+
+
+
